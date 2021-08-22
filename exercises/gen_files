@@ -1,0 +1,15 @@
+#!/bin/bash
+
+DESTINATION=$1
+read -p "Enter a file prefix: " FILE_PREFIX
+
+if [ -z $DESTINATION ]; then
+        echo "No path provided. defaulting to ~/temp"
+        DESTINATION=~/temp/
+fi
+
+mkdir -p $DESTINATION
+cd $DESTINATION
+touch ${FILE_PREFIX}{1..10}.txt
+echo done
+

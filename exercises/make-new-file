@@ -1,0 +1,6 @@
+# !/bin/bash
+
+mkdir -p ~/temp-files
+cd ~/temp-files
+touch file-$(date +%s).txt
+

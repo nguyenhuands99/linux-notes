@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# ls -1 | while read LINE; do echo -n "$LINE "; wc -l $LINE | awk '{print $1}'; done
+
+
+# example using `read`
+#echo -n 'what is your name?'
+#read NAME
+#echo "hello $NAME!"
+
+echo `date '+%F %T'` $@ >> `date +%F`.log
+# $1 $2 $3 positional arguments
+# $* $@ all arguments
+
+# chmod +x YOURFILE
+# ./YOURFILE message goes here
