@@ -145,7 +145,10 @@ curl -H "'accept-language: en-US" -H "Authorization: Bearer 12345" http://localh
 ![](./imgs/curl.png)
 
 
-
+**curl|bash** to be careful, from [this article](https://sysdig.com/blog/friends-dont-let-friends-curl-bash/), this command can easily do something really bad to you without you actually know it. There're a lot of installation guide out there doing that command. Some tips:
+-   always read the script you're about to invoke
+-   only do from the domain you trust
+-   maybe take one more step to redirect to a `.sh` file then read, give permission and execute :v 
 
 
 
