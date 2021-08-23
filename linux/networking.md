@@ -106,6 +106,15 @@ chmod 700 bash2048.sh
 
 **curl** works like a normal Linux program, it works more like cat where cat where it operates on input and output streams. Curl can be used to do testing against API servers (as opposed to something like Postman or Insomniac). It can also do something with making HTTP requests.
 
+First run a static file http server from my home directory on port 8000, using python:
+```
+python -m http.server 8000 --bind 0.0.0.0
+```
+Then you can check in your browser for port 8000 of you ip address (using `ifconfig`), there you will see you folder tree.
+
+Now run this: `curl http://localhost:8000`, it will return HTML code of the thing you see in your browser. Even curl to a file in home directory to see the content of the file.
+
+
 **Output**: Since curl is stream-based, you can redirect output to a file `curl -o <file>` or just `-O` to a file named the same name. Note that the output file in compressed format (binary), use flag `--compressed` to get text output. E.g
 ```
 curl https://www.gutenberg.org/cache/epub/2701/pg2701.txt -o whale.txt --compressed
@@ -113,12 +122,13 @@ curl https://www.gutenberg.org/cache/epub/2701/pg2701.txt -o whale.txt --compres
 
 **HTTP verbs**: Sometimes you wanna check an enpoint is working or not `curl -I` (or `curl --head`). This will send a HEAD request instead of GET. Other HTTP verbs can do by the format:
 ```
-curl -X <PUT/DELETE/PATCH/OPTIONS/POST> <url>
+curl -X <PUT/DELETE/PATCH/OPTIONS/POST> http://localhost:8000
 ```
 
-**Cookies** by `--cookie` or `-b`:
+**Cookies** by `--cookie` or `-b`, or even stack all cookies file and use `-c` to send them:
 ```
-curl -b "name=huan" <url>
+curl -b "name=huan" http://localhost:8000
+```
 
 **Redirects** by `-L`:
 ```
@@ -127,8 +137,12 @@ curl -L http://bit.ly/linux-cli
 
 **Headers** with flag `-H` .e.g.
 ```
-curl -H "'accept-language: en-US" -H "Authorization: Bearer 12345" <url>
+curl -H "'accept-language: en-US" -H "Authorization: Bearer 12345" http://localhost:8000
 ```
+
+**browser curl**: you can check Dev Tool in browser and copy the request from browser as CURL to re-use in command line:
+
+![](./imgs/curl.png)
 
 
 
