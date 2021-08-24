@@ -12,6 +12,8 @@ Here something my notes will cover:
 Preferences:
 
 [1] [Introduction to Bash Vim and Regex by James Halliday](https://frontendmasters.com/courses/bash-vim-regex/)
+
 [2] [Complete introduction to Linux by Brian Holt](https://frontendmasters.com/courses/linux-command-line/)
+
 [3] [VIM fundamentals by ThePrimeagen](https://frontendmasters.com/courses/vim-fundamentals/)
 
