@@ -5,9 +5,10 @@ This repository contains my notes for some of the basic knowledge about Linux an
 Here something my notes will cover:
 
 -   Linux as an OS
--   Some stuff and useful commands (bash, file management, pipe, permission, bash scripts, environments, processes, networking, pkg mangement,..)
+-   Some useful commands, Bash scripts, Tmux, package manager, networking stuff,..
 -   Vim as default editor
 -   Regular Expression
+-   Containers  
 
 Preferences:
 
@@ -16,4 +17,6 @@ Preferences:
 [2] [Complete introduction to Linux by Brian Holt](https://frontendmasters.com/courses/linux-command-line/)
 
 [3] [VIM fundamentals by ThePrimeagen](https://frontendmasters.com/courses/vim-fundamentals/)
+
+[4] [Complete intro to Containers (feat. Docker)(https://frontendmasters.com/courses/complete-intro-containers/)
 
