@@ -78,10 +78,10 @@ Press:
 -   `n` for next match
 
 You can also combine searching with deleting:
--   d/PATTERN - delete **TO** the next match of PATTERN
--   d?PATTERN - delete **TO** the previous match of PATTERN
--   dn - delete to the next of **ALREADY MATCHED** PATTERN
--   dn - delete to the previous of **already matched** pattern
+-   d/PATTERN - delete **TO** the **next** match of PATTERN
+-   d?PATTERN - delete **TO** the **previous** match of PATTERN
+-   dn - delete to the **next** of **already matched** PATTERN
+-   dN - delete to the **previous** of **already matched** pattern
 
 ## Jumping
 
@@ -89,14 +89,14 @@ You can also skip ahead to individual character in a simple way on the current l
 -   f + CHAR - search forward on the current line **TO** CHAR
 -   F + CHAR - search backward on the current line **TO** CHAR
 -   t + CHAR -  search forward on the current line **BEFORE** CHAR
--   T + CHAR -  search backward on the current line **TO** CHAR
+-   T + CHAR -  search backward on the current line **BEFORE (bacwards)** CHAR
 
 These are very useful in combination with the delete operators! They combine as you might expect:
 
--   df + CHAR - delete forward on the current line **TO** CHAR
--   dt + CHAR - delete forward on the current line to the character **BEFORE** CHAR
--   dF + CHAR - delete backward on the current line **TO** CHAR
--   dT + CHAR - delete backward on the current line to the character **AFTER** CHAR
+-   df + CHAR - delete forward on the current line **TO** matched CHAR
+-   dt + CHAR - delete forward on the current line to the character **BEFORE** matched CHAR
+-   dF + CHAR - delete backward on the current line **TO** matched CHAR
+-   dT + CHAR - delete backward on the current line to the character **BEFORE** matched CHAR
 
 ## Search and replace
 
@@ -105,7 +105,7 @@ These are very useful in combination with the delete operators! They combine as 
 ```
 FLAGS is optional:
 -   no FLAGS for the first occurence in current line
--   g for all occurences in the current line
+-   g for all occurences in the current line (gc: for global and prompt to replace or not)
 -   i for in-casesensitive
 
 **Replace everything**:
