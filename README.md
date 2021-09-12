@@ -18,5 +18,5 @@ Preferences:
 
 [3] [VIM fundamentals by ThePrimeagen](https://frontendmasters.com/courses/vim-fundamentals/)
 
-[4] [Complete intro to Containers (feat. Docker)(https://frontendmasters.com/courses/complete-intro-containers/)
+[4] [Complete intro to Containers (feat. Docker)](https://frontendmasters.com/courses/complete-intro-containers/)
 
